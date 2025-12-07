@@ -1,66 +1,217 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ScorEasy – An E-Learning Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+ScorEasy is an online learning platform designed for UPSC and GPSC exam preparation. It helps learners access study materials, practice tests, progress tracking, and expert guidance in one place. The system supports three user roles: **Student**, **Faculty**, and **Admin**.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📘 What Is ScorEasy?
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ScorEasy is an e-learning management system that lets users access courses, learning materials, quizzes, and performance reports. It works as a digital classroom where students prepare for government exams like **UPSC** and **GPSC**, and instructors manage and publish study content.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ⭐ Core Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Student Features
+- Register and log in
+- Choose subscription plans
+- Access study materials (PDFs, videos, notes)
+- Search tutorials and videos
+- Take quizzes and mock tests
+- Get results and progress reports
+- Receive notifications and updates
+- Communicate and send feedback
+- Manage profile
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Faculty Features
+- Register and log in
+- Create and manage courses
+- Upload tutorials, notes, and videos
+- Create quizzes and mock tests
+- View student progress
+- Interact with learners
+- Receive payments
+- Provide feedback to platform
+- Manage profile
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Admin Features
+- Admin login and management panel
+- Approve or reject user registrations
+- Manage courses, subjects, languages, tutorial types
+- Manage study materials
+- Handle student enrollments
+- Manage income and expenses
+- Send notifications and updates
+- Maintain platform data
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🧰 Technologies Used
 
-### Premium Partners
+### Frontend
+- **HTML** – structure of web pages  
+- **CSS** – styling and layout  
+- **JavaScript** – interactivity and logic  
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Backend
+- **Laravel (PHP Framework)** – backend development and routing  
+- **MySQL** – database for storing structured data  
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🎯 Project Objectives
+- Provide a complete online learning environment  
+- Deliver high-quality UPSC/GPSC preparation content  
+- Offer organized courses and study materials  
+- Support mock tests and quizzes  
+- Track user activities and learning progress  
+- Enable smooth communication and feedback  
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🧩 System Objects
+- **Student** – Learners preparing for exams  
+- **Instructor** – Faculty uploading materials  
+- **Admin** – Manages platform  
+- **Courses** – Exam preparation modules  
+- **Study Materials** – Videos, PDFs, notes  
+- **Practice Tests** – Mock exams and quizzes  
+- **Progress Reports** – Performance tracking  
+- **Notifications** – Updates and alerts  
+- **Feedback** – Reviews and suggestions  
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🔍 Study of Existing System (MaruGujarat.in)
 
-## License
+### Advantages
+- Provides job listings  
+- Shares exam updates  
+- Offers study materials  
+- Large community support  
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Disadvantages
+- Limited scope  
+- Complex interface  
+- Not beginner-friendly  
+- Repeated content  
+- Less structured preparation  
+
+---
+
+## ⚠️ Problems in Existing Systems
+
+### Operational Issues
+- Confusing navigation  
+- Lack of proper guidance  
+- Repeated content  
+- Limited mentoring  
+
+### Technical Issues
+- UI/UX challenges  
+- No image maps  
+- Heavy animations  
+
+### Informational Issues
+- Outdated content  
+- Fewer study resources  
+- No structured preparation  
+
+---
+
+## 🟢 Proposed System (ScorEasy)
+
+ScorEasy aims to solve these limitations by offering:
+- Fresh and accurate study materials  
+- Easy-to-use interface  
+- Mock tests and performance tracking  
+- Structured UPSC/GPSC preparation  
+- Guidance from qualified experts  
+- Notifications and updates in one place  
+
+---
+
+## ➕ Advantages of Proposed System
+- Clean and user-friendly  
+- Latest content  
+- Expert-verified materials  
+- Better focus environment  
+- Accessible on mobile  
+- Organized mock tests  
+- Single platform for all resources  
+
+### ➖ Disadvantages
+- Needs internet  
+- Limited offline access  
+- Mock tests follow fixed timing  
+- Single-language support  
+
+---
+
+## 🧾 Software Requirements
+
+### Client-Side
+- **Hardware:** Basic computer or smartphone  
+- **Software:** Web browser  
+
+### Developer-Side
+- **Hardware:** Standard development system  
+- **Software:** VS Code, PHP, Laravel, MySQL, XAMPP/WAMP  
+
+### Server-Side
+- **Hardware:** Hosting server  
+- **Software:** PHP, Laravel, MySQL  
+
+---
+
+## 💡 Functional Requirements
+- User registration and login  
+- Study material access  
+- Mock tests and quizzes  
+- Progress tracking  
+- Notifications  
+- Payment gateway integration  
+
+## 💡 Non-Functional Requirements
+- Good performance  
+- Scalability  
+- Data security  
+- Multi-device compatibility  
+- Proper documentation  
+
+---
+
+## 📊 Feasibility Study
+
+### Operational Feasibility
+- Simple and responsive interface  
+- Easy to understand  
+- Supports third-party tools  
+
+### Technical Feasibility
+- Laravel, MySQL, web hosting  
+- Networking infrastructure  
+- Content creation tools  
+
+### Economic Feasibility
+- Cost-effective  
+- Time-saving  
+- Better learning outcomes  
+
+### Scheduling Feasibility
+- Clear development timeline  
+- Proper resource planning  
+- Testing and rollout plan  
+
+---
+
+## 🧱 Modules Overview
+
+### Student Module
+Registration, login, course selection, payments, tutorials, quizzes, results, progress, feedback.
+
+### Faculty Module
+Course creation, content upload, quizzes, student tracking, communication, payouts.
+
+### Admin Module
+User approvals, course management, notifications, payments, platform maintenance.
