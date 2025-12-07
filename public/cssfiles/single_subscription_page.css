@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /* min-height: 100vh; */
+    width: 100%;
+    background: #eee;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* .image_container{
+    border: 1px solid black;
+    margin: 20px 20px;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.subscription_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px;
+} */
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.subscription_bg {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* ==================================== */
+
+html::-webkit-scrollbar{
+    /* width: 1rem; */
+    width: 0.4rem;
+    height: .5rem;
+ }
+ 
+ html::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+    background-color: #18537a;
+ }
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-container {
+    position: relative;
+    margin: 24px 15px;
+    /* width: 320px; */
+    width: 25%;
+    height: 580px;
+    overflow: hidden;
+    background-color: #fff;
+    /* box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15); */
+    /* cursor: pointer; */
+   box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+
+}
+
+.img-container,
+.body-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.body-container {
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(24, 83, 122, 0.6);
+    opacity: 0;
+    transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container:hover .overlay {
+    opacity: 1;
+    height: 150px;
+}
+
+.event-info {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.title,
+.price {
+    color: #18537a;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 12px;
+}
+
+.info {
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.separator {
+    width: 20%;
+    height: 6px;
+    background-color: #17537a;
+    margin-bottom: 16px;
+}
+
+.additional-info {
+    border-top: 1px solid #bbb;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom: 0;
+}
+
+.additional-info .info {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info i {
+    color: #18537a;
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+
+.action {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+}
+
+.item-container:hover .action {
+    top: 50px;
+}
+
+.action:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.subscription_name{
+    text-align: center;
+    color: #454545;
+    padding: 5px 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.more_link{
+    text-decoration: none;
+    background-color: #18537a;
+    color: white;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+.more_link:hover{
+    text-decoration: underline;
+}
+
+.desc_price{
+    font-weight: bold;
+}
+
+#last_line{
+    background-color: #18537a;
+    height: 5px;
+    width: 300px;
+    margin: auto;
+}
+/* =================================== */
+.subs_info_heading{
+    background-color: #18537a;
+    margin: 40px 20px 30px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.subs_first_heading{
+    background-color: #18537a;
+    margin: 20px 20px 30px 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.subs_access_heading{
+    background-color: #18537a;
+    margin: 40px 20px 40px 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.other_subs_heading{
+    background-color: #18537a;
+    margin: 100px 20px 20px 20px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.subs_info_container{
+    background-color: #fff;
+    width: 67%;
+    height: 580px;
+   box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+    padding-bottom: 25px; 
+
+}
+
+.subscrption_access_table{
+    margin: 20px 20px;
+    border: 1px solid #18537a;
+
+}
+
+#subs_access_table{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+   box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table th {
+    background-color: #fff;
+    color: #18537a;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 900;
+    border-bottom: 1px solid #18537a;
+}
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table tr:hover {
+    background-color: #ddd;
+}
+
+.subscription_name_for_info{
+    color: #18537a;
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.subscription_title_for_info{
+    margin-top: 10px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subscription_duration_for_info{
+    margin-top: 60px;
+    color: #878787;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subs_price_container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.subscription_price1_for_info{
+    color: #454545;
+    font-size: 16x;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.subscription_price2_for_info{
+    color: #454545;
+    font-size: 16x;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.subscription_description_for_info{
+    margin-top: 60px;
+    color: #878787;
+    padding: 0 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.subs_btn_container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.subscription_info_btn1{
+    background-color: #17537a;
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    transition: 0.3s all ease;
+}
+
+.subscription_info_btn1:hover{
+    text-decoration: underline;
+    width: 60%;
+}
+
+.subscription_info_btn2{
+    width: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #17537a;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.subscription_info_btn2:hover{
+    text-decoration: underline;
+    width: 60%;
+}
+
+.bottom_fav_text {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    color: #878787;
+}
+
+.contact_us_subs_heading{
+    background-color: #18537a;
+    margin: 60px 20px 20px 20px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.custom_contact_us_container{
+    background-color: #FFF;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 0 0 0 170px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    line-height: 25px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+#contact_us_heading{
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+#contact_us_description{
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.contact_us_btn{
+    text-decoration: none;
+    background-color: #17537a;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    width: 70%;
+    margin: auto;
+    transition: 0.3s all ease;
+}
+
+.contact_us_btn:hover{
+    width: 80%;
+}
+
+#mail_us_link{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.contact_us_and_logo_container{
+    display: flex;
+}
+
+.custom_scoreasy_logo_container{
+    width: 40%;
+    margin: auto;
+}
+
+#scoreasy_logo_contact_us{
+    height: 350px;
+    background-color: #17537a;
+    border-radius: 50%;
+    padding: -10px;
+    position: absolute;
+    margin-top: -140px;
+    /* margin-left: 80px; */
+    margin-left: 7%;
+}
+
+/* ========================== footer ==================== */
+.goToTopBtn{
+    height: 48px;
+    width: 50px;
+    position: fixed;
+    bottom: 24px;
+    cursor: pointer;
+    color: white;
+    background-color: #8e44ad;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    right: 24px;
+    z-index: 99999999999;
+ }
+
+ #gototop{
+    font-size: 45px;
+    margin-top: 2px;
+ }
+
+ .footer{
+    background-color: #fff;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    /* position: sticky; */
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:1rem 2rem;
+    color: #2c3e50;
+    margin-top: 1rem;
+    font-family: 'poppins', sans-serif;
+    z-index: 1000;
+    /* padding-bottom: 9.5rem; */
+ }
+ 
+ .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color: #2c3e50;
+    font-family: 'poppins', sans-serif;
+    z-index: 1000;
+ }
+ 
+ .footer.sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color: #2c3e50;
+    font-family: 'poppins', sans-serif;
+    z-index: 1000;
+    background-color: #fff;
+    border-top: .1rem solid rgba(0,0,0,.2);
+ }
+ 
+ .footer span{
+    color: #8e44ad;
+ }
+/* ========================== footer ==================== */
+#other_subscription_link{
+    text-decoration: none;
+    color: #454545;
+}
+
+#other_subscription_link:hover{
+    text-decoration: underline;
+    color: #878787;
+}
+
+.Subscription_Comparision_heading{
+    background-color: #18537a;
+    margin: 10px 20px 40px 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 0.4rem;
+}
+
+#ak_table_ke_bad_vali_line{
+    width: 90%;
+    margin: auto;
+
+    border: none;
+    height: 1px;
+    background-color: #454545; 
+}
+
+/* ========================= */
+
+.subscription_info_btn_try_hehe{
+    background-color: #17537a;
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    transition: 0.3s all ease;
+}
+
+.subscription_info_btn_try_hehe:hover{
+    text-decoration: underline;
+    width: 60%;
+}
+
+.razorpay-container .razorpay-payment-button{
+    width: 400px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #17537a;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s all ease;
+}
+
+.razorpay-container .razorpay-payment-button:hover{
+    text-decoration: underline;
+    width: 450px;
+}
+
+/* ------------------------------------- */
+.razorpay-container-try-try .razorpay-payment-button {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+}
+
+.item-container:hover .razorpay-container-try-try .razorpay-payment-button {
+    top: 50px;
+}
+
+.razorpay-container-try-try .razorpay-payment-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* =================== */
+.payment_done_msg_container{
+    background: pink;
+    width: 70%;
+    height: 280px;
+    color: green;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background: white;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.payment_done_box_close_btn{
+    font-size: 30px;
+    color: #454545;
+    margin: -1% 0 0 94%;
+    cursor: pointer;
+    position: absolute;
+ }
+ 
+ .payment_done_box_close_btn:hover{
+    color: black;
+ }
+
+ .paymet_done_msg_image{
+    margin-top: 10px;
+    height: 100px;
+}
+
+.payment_done_main_msg{
+    margin-top: 15px;
+}
